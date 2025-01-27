@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock Link By Kenz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Tombol Tema -->
+  <div class="theme-switcher">
+    <button id="theme-toggle">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <div class="header">
+    <h1>Unlock Link By Kenz</h1>
+  </div>
+
+  <div class="container">
+    <h2>Buka Link Ini Gan!</h2>
+    <p>Selesaikan tugas di bawah ini biar bisa buka link:</p>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar" style="width: 0%;"></div>
+    </div>
+
+    <!-- Tugas -->
+    <div id="tasks">
+      <div class="task">
+        <button class="task-btn" onclick="handleTask('subscribe', 'https://www.youtube.com/')" id="task-subscribe">
+          <i class="fas fa-play"></i> Subscribe YouTube Dulu!
+        </button>
+      </div>
+      <div class="task">
+        <button class="task-btn" onclick="handleTask('like', 'https://www.youtube.com/')" id="task-like">
+          <i class="fas fa-thumbs-up"></i> Like Videonya Gan!
+        </button>
+      </div>
+      <div class="task">
+        <button class="task-btn" onclick="handleTask('follow', 'https://www.instagram.com/')" id="task-follow">
+          <i class="fas fa-user-plus"></i> Follow Instagram Kita!
+        </button>
+      </div>
+    </div>
+
+    <!-- Tombol Unlock -->
+    <button id="unlock-btn" class="unlock-btn" disabled onclick="unlockLink()">Buka Linknya!</button>
+
+    <!-- Link yang terkunci -->
+    <div id="locked-link" style="display: none;">
+      <p>Link udah kebuka nih: <a href="https://example.com" target="_blank">Klik Disini</a></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

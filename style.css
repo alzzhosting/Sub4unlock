@@ -1,0 +1,116 @@
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --progress-bg: #ddd;
+  --button-bg: #28a745;
+  --button-hover: #218838;
+}
+
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f4f4f9;
+  --primary-color: #1d4ed8;
+  --progress-bg: #333;
+  --button-bg: #2563eb;
+  --button-hover: #1e40af;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+  background: var(--primary-color);
+  color: white;
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: var(--progress-bg);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+.task-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: var(--button-bg);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.task-btn:hover {
+  background: var(--button-hover);
+}
+
+.unlock-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: #ffc107;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.unlock-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+#locked-link {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px dashed var(--primary-color);
+  border-radius: 5px;
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.theme-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 20px;
+}
+
+.theme-switcher button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+a {
+  color: #1696FA;
+}
